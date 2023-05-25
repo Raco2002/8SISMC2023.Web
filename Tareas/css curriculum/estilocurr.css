@@ -12,8 +12,9 @@ header{
 
 section, header{
     border: 3px solid rgb(245, 133, 59);
-    border-radius: 5px;
+    border-radius: 15px;
     margin: -2%;
+    /* linear infinite; */
 }
 
 article, aside{
@@ -25,4 +26,45 @@ article, aside{
     margin: 1%;
     border-radius: 10px;
     padding: 1rem;
+}
+
+@keyframes animacion_test { 
+    from { 
+        background-color: chartreuse; 
+    } 
+    to { 
+        background-color: rgb(149,51,230); 
+    } 
+} 
+ 
+@keyframes girar { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(360deg); 
+    } 
+} 
+ 
+@keyframes label-animacion { 
+    from { 
+        transform: rotate(0deg); 
+        margin-left: 0; 
+    } 
+    to { 
+        transform: rotate(0deg); 
+        margin-left: 80vw; 
+    } 
+}
+
+.animacion {
+    width: 64px;
+    font-size: 1.3rem; 
+    padding: 1rem; 
+    border-radius: 15px; 
+    animation-name: label-animacion; 
+    animation-duration: 5s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
 }
