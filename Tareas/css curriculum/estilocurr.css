@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(230, 184, 131);
+    padding: 0%;
+    margin: 2%;
+    text-align: left;
+}
+
+header{
+    text-indent: 45%;
+    height: 100px;
+}
+
+section, header{
+    border: 3px solid rgb(245, 133, 59);
+    border-radius: 5px;
+    margin: -2%;
+}
+
+article, aside{
+    width: 40%;
+    display:inline-flexbox;
+    height: 100px;
+    align-items: center;
+    border: 4px solid rgb(174, 236, 236);
+    margin: 1%;
+    border-radius: 10px;
+    padding: 1rem;
+}
