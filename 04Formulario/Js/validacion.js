@@ -9,12 +9,13 @@ function validar(formulario){
         formulario.nombre.focus();
     }
 
-    /* var checkOK = "qwertyuiopasdfghjklñzxcvbnm"+
+    var checkOK = "qwertyuiopasdfghjklñzxcvbnm"+
     "QWERTYUIOPASDFGHJKLÑZXCVBNM";
 
     var checkString = formulario.nombre.value;
 
     var todoesValido = true;
+
     /*
         JavaScript es un lenguaje de programacion no tipado eso
         quiere decir que solo maneja 3 tipos de variable de dato.
@@ -24,7 +25,7 @@ function validar(formulario){
         let es una variable de acceso restringido
 
         const es una connstante de acceso unico
-    *
+    */
     for(var i = 0; i < checkString.length; i++){
         var ch = checkString.charAt(i);
         for(var j = 0; j < checkOK.length; j++){
@@ -41,13 +42,14 @@ function validar(formulario){
         alert("Escriba unicamente letras en el campo nombre");
         formulario.nombre.focus();
         return false;
-    } */
+    }
 
     var checkOK = "1234567890";
 
     var checkString = formulario.nombre.value;
 
     var todoesValido = true;
+
     for(var i = 0; i < checkString.length; i++){
         var ch = checkString.charAt(i);
         for(var j = 0; j < checkOK.length; j++){
@@ -71,3 +73,7 @@ function validar(formulario){
     /* Expresion regular basico de un correo = /\S+@\S+\.\S+/ */
     var b = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
 }
+
+alert("Email " + (b.test(txt) ? " " : " no ") + "valido");
+
+return b.test;

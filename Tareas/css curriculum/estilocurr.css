@@ -10,32 +10,29 @@ header{
     height: 100px;
 }
 
-section, header{
+section {
     border: 3px solid rgb(245, 133, 59);
     border-radius: 15px;
     margin: -2%;
-    /* linear infinite; */
 }
 
 article, aside{
     width: 40%;
-    display:inline-flexbox;
-    height: 100px;
-    align-items: center;
-    border: 4px solid rgb(174, 236, 236);
+    display:inline-flex;
+    height: 40%;
+    align-items:center;
+    border: 3px solid rgb(174, 236, 236);
     margin: 1%;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 2rem;
+    float: left;
 }
 
-@keyframes animacion_test { 
-    from { 
-        background-color: chartreuse; 
-    } 
-    to { 
-        background-color: rgb(149,51,230); 
-    } 
-} 
+.main-container img {
+    float: right;
+    width: 150px;
+    height: 150px;
+}
  
 @keyframes girar { 
     from { 
@@ -52,19 +49,19 @@ article, aside{
         margin-left: 0; 
     } 
     to { 
-        transform: rotate(0deg); 
+        transform: rotate(360deg); 
         margin-left: 80vw; 
     } 
 }
 
-.animacion {
-    width: 64px;
-    font-size: 1.3rem; 
-    padding: 1rem; 
-    border-radius: 15px; 
+.animacion img {
+    border-radius: 2px; 
     animation-name: label-animacion; 
     animation-duration: 5s; 
     animation-timing-function: ease-in-out; 
     animation-iteration-count: infinite; 
     animation-direction: alternate;
+    width: 50px;
+    height: 50px;
 }
+
