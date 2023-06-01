@@ -89,31 +89,6 @@ footer .redes{
     margin-bottom: auto;
   }
 
-
-  /* por si acaso
-
-  .menu ul li:hover > .submenu {
-    display: block;
-  }
-  
-  .menu .submenu {
-    display: none;
-    position: absolute;
-    padding: 0;
-  }
-  
-  .menu .submenu li {
-    display:block;
-  }
-  
-  .menu .submenu li a {
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    border-radius: 15px;
-  }
-  */
-
   /*Esto es para las imagenes que pasan*/
   .imagenes {
     position: relative;

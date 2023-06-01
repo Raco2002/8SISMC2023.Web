@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JS</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container">
+        <form method="get" name="formulario" action="">
+            <label>
+                <h3>1) Suponga que un individuo desea invertir su capital en un banco
+                y deasea saber cuanto dinero gastara después de un mes si el banco
+                paga a razón de 2% mensual.
+                <br>
+                Formulario para el calculo de inversion
+                de capital al 2% mensual.
+                </h3>
+            </label>
+            <div class="table-content">
+            <table>
+                <tr>
+                    <td>Introduce la cantidad a invertir: </td>
+                        <td>
+                            <input type="text" name="cantidad" 
+                            onkeypress="return validarn(event)">
+                        </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Calcular interes" 
+                        name="enviar" onclick="interes()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Su saldo total con el
+                        interes al 2% mensual es
+                        de:
+                    </td>
+                    <td>
+                        <input type="text" readonly="readonly" 
+                        class="input_text" name="sueldoI" id="cantidadI">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Borrar Datos" 
+                        name="borraru" onclick="borrar()">
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+ <!-- Ejercicio 2 -->
+    <div class="container">
+        <form method="get" name="formulario" action="">
+        <label>
+            <h3>2) Un vendedor recibe un sueldo base más un 10% extra por comisión 
+            de sus ventas, el vendedor desea saber cuanto dinero obtendrá por 
+            concepto de comisiones por las tres ventas que realiza en el mes y 
+            el total que recibirá en el mes tomando en cuenta su sueldo base y
+            comisiones.
+            <br>
+            Formulario para el sueldo del vendedor de sus tres ventas en el mes
+            </h3>
+        </label>
+    <div class="table-content 1">
+    <table>
+        <tr>
+            <td>Introduce el primer sueldo: </td>
+                <td>
+                    <input type="text" name="sueldo1" 
+                    onkeypress="return sueldo1(event)">
+                </td>
+        </tr>
+        <tr>
+            <td>Introduce el segundo sueldo: </td>
+                <td>
+                    <input type="text" name="sueldo2" 
+                    onkeypress = "return sueldo2(event)">
+                </td>
+        </tr>
+        <tr>
+            <td>Introduce el tercer sueldo: </td>
+                <td>
+                    <input type="text" name="sueldo3" 
+                    onkeypress="return sueldo3(event)">
+                </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Calcular sueldo total" 
+                name="enviar" onclick="totalsueldo()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Su sueldo total en el mes
+                con comisiones es de:
+            </td>
+            <td>
+                <input type="text" readonly="readonly" 
+                class="input_text" name="totalsueldot" id="sueldoT">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Borrar Datos" 
+                name="borrara" onclick="borrar1()">
+            </td>
+        </tr>
+    </table>
+    </div>
+    </form>
+    </div>
+<script src="./JS/interes.js"></script>
+
+</body>
+</html>
+
+ <!-- button y submit -->
