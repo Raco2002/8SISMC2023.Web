@@ -1,0 +1,41 @@
+*{
+    margin: 10px;
+    margin-top: 5px;
+    background-color:rgb(34, 37, 36);
+    padding: 0%;
+    color: rgb(240, 237, 243);
+    text-align: left;
+}
+
+header{
+    border: 2px solid rgb(148, 12, 240);
+    border-radius: 3%;
+    text-align: center;
+}
+
+section{
+    border: 2px solid rgb(148, 12, 240);
+    border-radius: 1%;
+}
+
+header h1{
+    text-align: center;
+}
+
+.regresa {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8f12d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+.regresa:hover {
+    background-color: #a10fce;
+  }
+
+footer{
+    text-align: center;
+}

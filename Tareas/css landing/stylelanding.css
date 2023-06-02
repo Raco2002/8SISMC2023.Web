@@ -89,7 +89,7 @@ footer .redes{
     margin-bottom: auto;
   }
 
-  /*Esto es para las imagenes que pasan*/
+  /*Esto es para las imagenes que pasan */
   .imagenes {
     position: relative;
     width: 750px; /* Ajusta el ancho según tus necesidades */
@@ -106,48 +106,45 @@ footer .redes{
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+    transition: opacity 1s ease-in-out;  /*Transición de opacidad */
   }
-  
+
   .imagenes img:first-child {
     opacity: 1;
   }
   
   @keyframes cambioImagen {
-    0% {
-      opacity: 0;
-    }
-    33% {
-      opacity: 0;
-    }
-    66% {
+    0%, 25% {
       opacity: 1;
     }
-    100% {
+    30%, 55% {
+      opacity: 0;
+    }
+    60%, 100% {
       opacity: 1;
     }
   }
   
   .imagenes img:nth-child(1) {
-    animation: cambioImagen 9s infinite;
+    animation: cambioImagen 10s infinite;
   }
   
   .imagenes img:nth-child(2) {
-    animation: cambioImagen 9s infinite;
-    animation-delay: 3s; /* Retraso para la segunda imagen */
+    animation: cambioImagen 15s infinite;
+    animation-delay: 4s; /* Retraso para la segunda imagen */
   }
   
   .imagenes img:nth-child(3) {
-    animation: cambioImagen 9s infinite;
-    animation-delay: 6s; /* Retraso para la tercera imagen */
+    animation: cambioImagen 15s infinite;
+    animation-delay: 8s; /* Retraso para la tercera imagen */
   }
 
   .imagenes img:nth-child(4) {
-    animation: cambioImagen 9s infinite;
-    animation-delay: 9s; /* Retraso para la tercera imagen */
+    animation: cambioImagen 15s infinite;
+    animation-delay: 12s; /* Retraso para la cuarta imagen */
   }
 
   .imagenes img:nth-child(5) {
-    animation: cambioImagen 9s infinite;
-    animation-delay: 12s; /* Retraso para la tercera imagen */
+    animation: cambioImagen 15s infinite;
+    animation-delay: 16s; /* Retraso para la quinta imagen */
   }
