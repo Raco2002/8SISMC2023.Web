@@ -106,6 +106,7 @@ function contarLetrasUnicas(palabra) {
     var palabrasSeparadas = palabrasInput.split(",");
     var palabraMaxima = "";
     var cantidadMaxima = 0;
+    var todasLasPalabras = "";
   
     for (var i = 0; i < palabrasSeparadas.length; i++) {
       var palabraActual = palabrasSeparadas[i];
@@ -115,9 +116,12 @@ function contarLetrasUnicas(palabra) {
         palabraMaxima = palabraActual;
         cantidadMaxima = cantidadCaracteresUnicos;
       }
+
+      todasLasPalabras += palabraActual + " = " + cantidadCaracteresUnicos + "  ";
     }
   
     var outputElement = document.getElementById("p3-output");
-    outputElement.textContent = "La palabra con más caracteres únicos es: " 
-    + palabraMaxima + "\nCantidad de caracteres únicos: " + cantidadMaxima;
+    outputElement.textContent = "Todas las palabras ingresadas: " + todasLasPalabras +
+    "\n\nLa palabra con más caracteres únicos es: " + palabraMaxima + 
+    "\nCantidad de caracteres únicos: " + cantidadMaxima;
   }

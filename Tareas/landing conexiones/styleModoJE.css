@@ -44,3 +44,8 @@ header h1{
 footer{
     text-align: center;
 }
+
+img {
+    width: 400px;
+    height: 220px;
+}

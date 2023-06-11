@@ -34,9 +34,6 @@ function borrar(){
 
 //Ejercicio 2
 
-
-
-
 function sueldo1(e){
     var teclado = (document.all)?e.keyCode : e.which;
 
@@ -91,5 +88,5 @@ function borrar1(){
 
     document.formulario.sueldo1.value = "";
     document.formulario.sueldo2.value = "";
-    document.formulario.sueldo3.value = "";
+    document.formulario.sueldo3.value = ""; 
 }

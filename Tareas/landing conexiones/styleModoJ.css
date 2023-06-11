@@ -15,7 +15,7 @@ header{
 }
 
 h1{
-    background-color: rgb(15, 15, 165);
+  background-color: rgb(15, 15, 165);
 }
 
 section{
@@ -44,3 +44,32 @@ header h1{
 footer{
     text-align: center;
 }
+
+/*para la tabla*/
+section td{
+    text-align: center;
+}
+
+.separator1 {
+    width: 48%;
+  }
+
+.separator2 {
+    width: 50%;
+}
+
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 2px solid rgb(92, 18, 211);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .imagenesCSCM{
+    width: 320px;
+    height: 200px;
+  }
