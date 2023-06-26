@@ -16,9 +16,9 @@ window.onload = () => {
     */
 
     const display = document.getElementById("display");
-    const botones = Array.from (document.getElementsByName("boton"));
+    const botones = Array.from(document.getElementsByName("boton"));
     const campoMensaje = document.getElementById("mensaje");
-    const mensaje = document.getElementById("mensaje");
+    const mensaje = document.getElementById("mensajes");
     const colorValor = document.getElementById("colorValor");
 
     //vamos a necesitar una funcion que se encargue de ir al siguiente
@@ -40,7 +40,7 @@ window.onload = () => {
         if(imagenActual > 0){
             imagenActual--;
         }else{
-            imagenActual = imagenes.length -1;
+            imagenActual = imagenes.length-1;
         }
         display.src = imagenes[imagenActual];
     };
@@ -59,8 +59,7 @@ window.onload = () => {
         comportamientos desde el JS
         */
 
-        mensaje.innerHTML += `${campoMensaje.value}
-        </br>`;
+        mensaje.innerHTML += `${campoMensaje.value}</br>`;
         campoMensaje.value = "";
         /*
         Si queremos manipular otros elementos de los componetnes del HTML, o queremos crear
