@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(8, 74, 216);
+    color: rgb(221, 220, 238);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+head {
+    width: 100%;
+    color: white;
+    font-family: "Chintzy";
+    font-size: 60px;
+    text-align: center;
+}
+
+.tema {
+    text-align: center;
+    padding: 1%;
+    border: 5% #000;
+    border-radius: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    text-align: center;
+    padding: 1%;
+    border: 16px #5a5555;
+    border-radius: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
