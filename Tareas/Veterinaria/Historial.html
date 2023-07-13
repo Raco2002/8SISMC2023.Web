@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="stylesheet" href="./Estilos/StylePagPrinU.css">
+    <title>Historial de citas</title>
+    <link rel="stylesheet" href="./Estilos/StyleHistorial.css">
 </head>
 <body>
     <head>
         <div class="container">
+            
             <img class="image-left" src="./imagenes/Logo.png" alt="Imagen Izquierda">
-            <h1 class="title">Bienvenido</h1>
+            <h1 class="title">Historial <br> de citas</h1>
+
             <div class="dropdown">
               <img class="image-right" src="./imagenes/menu.png" alt="Imagen Derecha">
               <div class="dropdown-content">
@@ -27,44 +29,35 @@
                        </div>
                     </div>
                   </div>
+
                 <a href="">Configuracion</a>
                 <br>
+
                 <a href="./IngresaMain.html">Salir de la cuenta</a>
               </div>
             </div>
         </div>
+        <br>
+        <button class="boton01" onclick="window.location.href='./PaginaPrinU.html'">
+            <img class="regresar" src="./imagenes/Regresar.png" alt="">
+        </button>
     </head>
-    <br>
-    <br>
-    <section class="btn-container">
-
-        <button class="agendar" onclick="window.location.href='./Agendar.html'">
-            Agendar una cita
-        </button>
-
-        <button class="historial" onclick="window.location.href='./Historial.html'">
-            Historial de citas
-        </button>
-        <br>
-        <br>
-        <button class="tratamiento" onclick="window.location.href='./Tratamiento.html'">
-            Tratamiento
-        </button>
-        <br>
-    </section>
-    <img src="./imagenes/imagen animales.png" class="img2" alt="">
-        <h2>Esta es tu veterinaria de confianza, <br>y tu mascota te lo agradecera</h2>
-
-    <section class="parte2">
-        <h3>Contactanos</h3>
-        <div>
-            <img class="tel" src="./imagenes/tel-removebg-preview.png" alt="">
-            55 46 27 32 45
+    
+    <section class="parte01">
+        <div id="campo-dia-hora">
+            <h3>Mes de Junio:</h3>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 14/06/2023  Hora: 12 pm</textarea>
         </div>
-        <br>
-        <div>
-            <img class="correo" src="./imagenes/email-removebg-preview.png" alt="">
-            Vetefuturista@gmail.com
+        <div id="campo-dia-hora">
+            <h3>Mes de Mayo:</h3>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 20/05/2023  Hora: 3 pm</textarea>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 12/05/2023  Hora: 1 pm</textarea>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 7/05/2023  Hora: 5 pm</textarea>
+        </div>
+        <div id="campo-dia-hora">
+            <h3>Mes de Abril:</h3>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 25/04/2023  Hora: 2 pm</textarea>
+            <textarea rows="2" cols="40" readonly style="resize: none;">Dia: 16/04/2023  Hora: 12 pm</textarea>
         </div>
         <br>
     </section>

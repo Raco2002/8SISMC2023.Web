@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 125vh;
     /*border: 4px solid black;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -33,17 +33,17 @@ body {
     margin: 0 35px;
   }
 
-
   .parte01{
     background-color: #3AA428;
     text-align: center;
     float: left;
-    width: 370px;
+    width: 360px;
+    height: 550px;
     color: white;
   }
 
 input{
-    width: 210px;
+    width: 200px;
     height: 30px;
     background-color: lightgrey;
 }
@@ -62,7 +62,7 @@ button {
 
   select {
     background-color: lightgrey;
-    width: 210px;
+    width: 200px;
     height: 30px;
   }
 
@@ -126,6 +126,18 @@ button {
     height: 20px;
     width: 20px;
     position: absolute; 
-    top: 145px; 
+    top: 150px; 
     left: 500px;
+  }
+
+  h3{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  textarea{
+    text-align: left;
+    height: 200px;
+    width: 300px;
+    direction: rtl;
   }

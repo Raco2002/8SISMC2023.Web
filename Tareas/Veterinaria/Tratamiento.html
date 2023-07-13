@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="stylesheet" href="./Estilos/StylePagPrinU.css">
+    <title>Tratamiento</title>
+    <link rel="stylesheet" href="./Estilos/StyleTratamien.css">
 </head>
 <body>
     <head>
         <div class="container">
+            
             <img class="image-left" src="./imagenes/Logo.png" alt="Imagen Izquierda">
-            <h1 class="title">Bienvenido</h1>
+            <h1 class="title">Tratamiento</h1>
+
             <div class="dropdown">
               <img class="image-right" src="./imagenes/menu.png" alt="Imagen Derecha">
               <div class="dropdown-content">
@@ -27,46 +29,36 @@
                        </div>
                     </div>
                   </div>
+
                 <a href="">Configuracion</a>
                 <br>
+
                 <a href="./IngresaMain.html">Salir de la cuenta</a>
               </div>
             </div>
         </div>
+        <br>
+        <button class="boton01" onclick="window.location.href='./PaginaPrinU.html'">
+            <img class="regresar" src="./imagenes/Regresar.png" alt="">
+        </button>
     </head>
-    <br>
-    <br>
-    <section class="btn-container">
 
-        <button class="agendar" onclick="window.location.href='./Agendar.html'">
-            Agendar una cita
-        </button>
+    <section class="parte01">
+        <div id="tratamiento">
+            <h3>Tratamiento para su mascota:</h3>
+            <textarea rows="2" cols="40" readonly style="resize: none;">
+                Nombre 
 
-        <button class="historial" onclick="window.location.href='./Historial.html'">
-            Historial de citas
-        </button>
-        <br>
-        <br>
-        <button class="tratamiento" onclick="window.location.href='./Tratamiento.html'">
-            Tratamiento
-        </button>
-        <br>
+                Aqui estara toda la informacion del perro
+            </textarea>
+
+        <h3>Tratamiento para su segunda mascota:</h3>
+            <textarea rows="2" cols="40" readonly style="resize: none;">
+                Nombre 
+
+                Aqui estara toda la informacion del segundo perro
+            </textarea>
     </section>
-    <img src="./imagenes/imagen animales.png" class="img2" alt="">
-        <h2>Esta es tu veterinaria de confianza, <br>y tu mascota te lo agradecera</h2>
-
-    <section class="parte2">
-        <h3>Contactanos</h3>
-        <div>
-            <img class="tel" src="./imagenes/tel-removebg-preview.png" alt="">
-            55 46 27 32 45
-        </div>
-        <br>
-        <div>
-            <img class="correo" src="./imagenes/email-removebg-preview.png" alt="">
-            Vetefuturista@gmail.com
-        </div>
-        <br>
-    </section>
+    <br>
 </body>
 </html>
