@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="./Estilos/StyleMain.css">
+</head>
+<body class="container">
+    <head>
+        <img src="./imagenes/Logo.png" alt="">
+        <h1>Ingresa</h1>
+    </head>
+    <br>
+    <section class="userid01">
+        <div class="ingresa01">
+            <h2>Ingrese su nombre o correo:</h2>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div class="ingresa02">
+            <h2>Ingresa tu contraseña</h2>
+            <input type="password" id="password">
+        </div>
+        <br>
+        <div class="Recu-contraseña">
+            <a href="./ContraseñaOlvidada.html">Olvide mi contraseña</a>
+        </div>
+        <div>
+            <br>
+            <br>
+            No tengo cuenta:
+            <br>
+            <a href="./CrearCuenta.html">Crear una cuenta</a>
+        </div>
+        <br>
+        <div class="button">
+            <button class="boton" onclick="validarCampos()" >
+                Ingresar
+            </button>
+        </div>
+        <br>
+    </section>
+    <br>
+    <script src="./JS/Ingresa.js"></script>
+</body>
+</html>

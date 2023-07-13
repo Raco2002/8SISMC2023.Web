@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una cuenta</title>
+    <link rel="stylesheet" href="./Estilos/StyleCrearCuen.css">
+</head>
+<body>
+    <head>
+        <img src="./imagenes/Logo.png" alt="">
+        <h1>Registrate</h1>
+    </head>
+    <br>
+    <section class="userid01">
+        <div class="registrate01">
+            <h2>Ingrese su nombre completo:</h2>
+            <input type="text" id="text">
+        </div>
+        <br>
+        <div class="registrate02">
+            <h2>Contraseña</h2>
+            <input type="password" id="password">
+        </div>
+        <br>
+        <div class="registrate03">
+            <h2>¿Cuantas mascotas deseea ingresar?(solo se permiten 10)</h2>
+            <div class="input-container">
+                <select id="cantidad" onchange="agregarCampos()">
+                    <option value="0">Selecciona un campo</option>
+                    <option value="1">1 Mascota</option>
+                    <option value="2">2 Mascotas</option>
+                    <option value="3">3 Mascotas</option>
+                    <option value="4">4 Mascotas</option>
+                    <option value="5">5 Mascotas</option>
+                    <option value="6">6 Mascotas</option>
+                    <option value="7">7 Mascotas</option>
+                    <option value="8">8 Mascotas</option>
+                    <option value="9">9 Mascotas</option>
+                    <option value="10">10 Mascotas</option>
+                </select>
+            </div>
+            <br>
+            
+            <div id="campos-container"></div>
+    
+        </div>
+        <div class="registrate04">
+            <h2>Ingrese su correo electronico</h2>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div class="registrate05">
+            <h2>Numero Telefonico</h2>
+            <input type="number" id="number">
+        </div>
+        <br>
+        <br>
+        <div class="registrate06">
+            <label class="checkbox-label">
+            <input type="checkbox" id="mi-checkbox">
+            Acepta los terminos y condiciones
+            </label>
+        </div>
+        <br>
+        <div class="container">
+            <button id="mi-boton" disabled class="boton01" onclick="window.location.href='./PaginaPrinU.html'">
+                Registrate
+            </button>
+            <button class="boton02" onclick="window.location.href='./IngresaMain.html'">
+                Regresa
+            </button>
+        </div>
+    </section>
+    <br>
+    <script src="./JS/CrearCuenta.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda una cita</title>
+    <link rel="stylesheet" href="./Estilos/StyleAgendar.css">
+    <script src="./JS/Agendar.js"></script>
+
+</head>
+<body>
+    <head>
+        <div class="container">
+            
+            <img class="image-left" src="./imagenes/Logo.png" alt="Imagen Izquierda">
+            <h1 class="title">Agenda una <br> nueva cita</h1>
+
+            <div class="dropdown">
+              <img class="image-right" src="./imagenes/menu.png" alt="Imagen Derecha">
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="">Notificaciones     ↓</a>
+                    <div class="sub-dropdown-content">
+                        <div class="noti-relleno">
+                            <a class="noti" >Bienvenido</a>
+                            <p class="noti">Gracias por aceptar nuestros servicios</p>
+                        </div>
+                        <div class="noti-relleno">
+                            <a class="noti" >Bienvenido</a>
+                            <p class="noti">Gracias por aceptar nuestros servicios</p>
+                       </div>
+                    </div>
+                  </div>
+
+                <a href="">Configuracion</a>
+                <br>
+
+                <a href="./IngresaMain.html">Salir de la cuenta</a>
+              </div>
+            </div>
+        </div>
+        <br>
+        <button class="boton01" onclick="window.location.href='./PaginaPrinU.html'">
+            <img class="regresar" src="./imagenes/Regresar.png" alt="">
+        </button>
+        
+    </head>
+
+    <section class="parte01">
+        <h3>Seleccione el dia de <br> la cita disponible </h3>
+        <input class="datefield" data-val="true" data-val-required="Date is required" 
+        id="ReleaseDate" name="ReleaseDate" type="date" />
+        <br>
+        <br>
+        <h3>Seleccione la hora</h3>
+        <input class="datefield" data-val="true" data-val-required="Date is required" 
+        id="ReleaseTime" name="ReleaseDate" type="time" />
+        <br>
+        <br>
+        <h3>Seleccione a su medico:</h3>
+            <select id="Doctores">
+                <option value=""></option>
+                <option value="doc1">María Ascención Herrera Martinez</option>
+                <option value="doc2">María José Flores García</option>
+                <option value="doc3">Pedro Alejandro Molina Sanchez</option>
+            </select>
+        <br>
+        <br>
+        <br>
+        <div class="btn-container">
+            <button id="mi-boton" class="boton01" onclick="validarCampos()">
+                Crear cita
+            </button>
+        </div>
+        <br>
+    </section>
+    <script src="./JS/Agendar.js"></script>
+</body>
+</html>
